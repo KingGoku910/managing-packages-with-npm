@@ -3,7 +3,7 @@
 * the verification process may break
 * ***************************************************/
 
- //'use strict';
+//'use strict';
 
 //var fs = require('fs');
 var bGround = require('fcc-express-bground');
@@ -23,17 +23,7 @@ if (!process.env.DISABLE_XORIGIN) {
         next();
     });
 }
-app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/views/index.html");
-});
 
-app.use('/public', express.static(__dirname + "/public"))
-
-app.get("/json", function (req, res) {
-    res.json(
-        { "message": "Hello json" }
-    );
-});
  //app.use('/public', express.static(process.cwd() + '/public'));
 
  //app.route('/_api/package.json')
