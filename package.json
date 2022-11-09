@@ -4,6 +4,7 @@
 	"description": "A web app that will contribute to meaningfull web and software applications",
 	"keywords": [ "freecodecamp", "KingGoku90", "Learn to be a programmer", "Learn to be a web deveoper" ],
 	"license": "MIT",
+	"version": "1.0",
 	"dependencies": {
 		"express": "^4.18.2"
 	},
