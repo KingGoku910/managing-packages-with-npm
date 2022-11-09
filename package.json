@@ -2,7 +2,12 @@
 	"name": "fcc-learn-npm-package-json",
 	"author": "KingGoku90",
 	"description": "A web app that will contribute to meaningfull web and software applications",
-	"keywords": [ "freecodecamp", "KingGoku90", "Learn to be a programmer", "Learn to be a web deveoper" ],
+	"keywords": [
+		"freecodecamp",
+		"KingGoku90",
+		"Learn to be a programmer",
+		"Learn to be a web deveoper"
+	],
 	"license": "MIT",
 	"version": "1.0.0",
 	"dependencies": {
