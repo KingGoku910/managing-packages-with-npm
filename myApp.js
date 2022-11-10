@@ -63,7 +63,7 @@ app.get("/json", function (req, res) {
 
 /** 8) Chaining middleware. A Time server */
 function getCurrentTimeString() {
-    return Date().toString();    
+    return new Date().toString();    
 }
 
 app.get(now, (req, res, next) => {
