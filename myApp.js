@@ -17,13 +17,7 @@ app.use(function (req, res, next) {
 app.use(bodyParser.urlencoded({ extended: false }))
 //parse app json
 app.use(bodyParser.json())
-    
 
-//// parse application/x-www-form-urlencoded
-//app.use(bodyParser.urlencoded({ extended: false }));
-
-//// parse application/json
-//app.use(bodyParser.json());
 
 /** 1) Meet the node console. */
 bGround.log("Hello World");
@@ -97,6 +91,10 @@ app.get("/name", (req, res) => {
 
 
 /** 12) Get data form POST  */
+app.post("/name", (req, res) => {
+    var string = req.body.first + " " + req.body.last;
+    res.json({ name: string });
+});
 
 
 // This would be part of the basic setup of an Express app
