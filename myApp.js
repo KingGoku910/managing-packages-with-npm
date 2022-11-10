@@ -75,7 +75,7 @@ app.get("/now", (req, res, next) => {
 
 /** 9)  Get input from client - Route parameters */
 
-app.get("/:word/echo", function (req, res) {
+app.get("/:word/echo", (req, res) => {
     res.json({ echo: req.params.word });
 });
 
