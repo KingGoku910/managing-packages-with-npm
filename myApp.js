@@ -62,15 +62,15 @@ app.get("/json", function (req, res) {
 
 
 /** 8) Chaining middleware. A Time server */
-function getCurrentTimeString() {
-    return new Date().toString();    
+function getTheCurrentTimeString() {
+    return new Date().toString();
 }
 
-app.get(now, (req, res, next) => {
-    req.time = getCurrentTimeString();
+app.get("/now", (req, res, next) => {
+    req.time = getTheCurrentTimeString();
     next();
 }, (req, res) => {
-    req.json({ time: req.time });
+    res.json({ time: req.time });
 });
 
 /** 9)  Get input from client - Route parameters */
